@@ -38,8 +38,8 @@ betat = G*ms
 x = []
 y = []
 def probabilidad(sigma, v, r, alpha, alphamin, alphamax, betat):	
-	betamax = v**2 / (r**(alphamin-1)) 
-	betamin = v**2 / (r**(alphamax-1))
+	betamin = v**2 / (r**(alphamin-1)) 
+	betamax = v**2 / (r**(alphamax-1))
 	beta = v**2 / (r**(alpha-1))
 	a = np.exp(-(betat-beta)**2/(sigma))
 	return a, beta
